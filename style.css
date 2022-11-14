@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f2ce;
+  }
+
+  #name1,
+  #name2 {
+    background-color: #e7ac65;
+    color: black;
+    padding: 3px;
+    margin: auto;
+    font-weight: bold;
+  }
+
+  #player_score1 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+
+  #player_score2 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+
+  #game {
+    max-width: 6580px;
+    height: 60vh;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cell {
+    border: 5px solid #a63c06;
+    width: 200px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  #reset {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7ac65;
+    display: block;
+    margin: auto;
+    padding: 5px 10px;
+    max-width: 400px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b0101;
+  }
+
+  #score_tally {
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 44vw;
+    height: 1rem;
+    display: block;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #710000;
+    font-weight: bold;
+  }
+
+  #player1,
+  #player2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #EEBA0B;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #scoretable {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+  }
+
